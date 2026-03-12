@@ -4,8 +4,6 @@
  [![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-orange)](https://scikit-learn.org/)
  [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688)](https://fastapi.tiangolo.com/)
 
-This is an original machine-learning project by **Maruf Fayziev**.
-
 The goal is to build and explain a compact end‑to‑end churn prediction
 pipeline in pure Python using only open-source libraries and built-in
 datasets (no copied notebooks or external project code).
