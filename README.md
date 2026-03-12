@@ -142,10 +142,12 @@ feature order and count that the model expects.
 
 On the default dataset, the model typically reaches:
 
-- Accuracy above 97% on the test set
-- ROC‑AUC around 0.99
+- **AUC Score:** ~0.99
+- **Algorithm:** LogisticRegression (scikit-learn Pipeline with StandardScaler)
 
-Exact numbers can vary slightly depending on the train/test split.
+Exact numbers and full metrics can vary slightly depending on the
+train/test split; see the output of `python -m src.evaluate` for
+details.
 
 ## Example Scenario
 
