@@ -5,7 +5,7 @@ For simplicity and to keep the project self-contained, we use the
 binary churn / no-churn classification problem.
 """
 
-from typing import Tuple
+from typing import List, Tuple
 
 import numpy as np
 from sklearn.datasets import load_breast_cancer
@@ -36,3 +36,14 @@ def load_data(
     )
 
     return X_train, X_test, y_train, y_test
+
+
+def get_feature_names() -> List[str]:
+    """Return the names of the numeric features.
+
+    Useful for documentation and for clients of the prediction API so they
+    know the expected order of the input vector.
+    """
+
+    dataset = load_breast_cancer()
+    return list(dataset.feature_names)

@@ -18,7 +18,8 @@ maruf-churn-from-scratch/
     ├── data.py          # data loading / splitting
     ├── model.py         # model and pipeline definition
     ├── train.py         # training script
-    └── evaluate.py      # evaluation and simple CLI
+    ├── evaluate.py      # evaluation and metrics
+    └── api.py           # FastAPI app for online predictions
 ```
 
 ## Quick start
@@ -41,6 +42,15 @@ python -m src.train
 ```bash
 python -m src.evaluate
 ```
+
+5. Run the API server (optional):
+
+```bash
+uvicorn src.api:app --reload
+```
+
+Then open `http://127.0.0.1:8000/docs` to try the `/schema` and `/predict`
+endpoints from the interactive Swagger UI.
 
 All code in this repository was written from scratch for learning and
 portfolio purposes.
